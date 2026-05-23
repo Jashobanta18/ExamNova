@@ -62,7 +62,7 @@ export default function Setup({ onStart, onLeaderboard }: SetupProps) {
               Platform
             </h1>
             <p className="text-slate-400 mt-2 text-sm">
-              Practice for 13+ All India & State Exams · English / Hindi / Odia
+              Practice for 21 All India & State Exams · English / Hindi / Odia
             </p>
           </motion.div>
 
@@ -174,7 +174,7 @@ export default function Setup({ onStart, onLeaderboard }: SetupProps) {
           </motion.button>
 
           <p className="text-center text-slate-500 text-xs">
-            Made for India Students · 13 Exams · English / Hindi / Odia
+            Made for India Students · 21 Exams · English / Hindi / Odia
           </p>
         </div>
       </div>

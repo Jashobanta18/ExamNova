@@ -22,6 +22,14 @@ const examNames = [
   "MPSC",
   "TNPSC",
   "Police Exam",
+  "Odisha Police SI",
+  "Odisha Police Constable",
+  "IPS Exam",
+  "OJEE",
+  "Special OJEE",
+  "KPSC",
+  "WBPSC",
+  "RPSC",
 ];
 
 const realQuestions: Question[] = [
@@ -476,5 +484,7 @@ export function generateQuestions(): Question[] {
   return generated;
 }
 
-export const allQuestions: Question[] = generateQuestions();
 export { examNames };
+
+import { syllabusQuestions } from "./questions_db";
+export const allQuestions: Question[] = syllabusQuestions;

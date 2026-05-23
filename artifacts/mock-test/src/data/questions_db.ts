@@ -1,4 +1,14 @@
 import type { Question } from "./questions";
+import {
+  odishaPolice_SI,
+  odishaPolice_Constable,
+  ips,
+  ojee,
+  specialOjee,
+  kpsc,
+  wbpsc,
+  rpsc,
+} from "./questions_db2";
 
 type Q = Question;
 const e = (exam: string, en: string, opts: string[], ans: number, exp?: string): Q => ({
@@ -685,7 +695,7 @@ const osssc: Q[] = [
   e("OSSSC","Odisha's capital was shifted from Cuttack to Bhubaneswar in?",["1947","1948","1950","1956"],1,"19 August 1948"),
   e("OSSSC","Raja festival in Odisha celebrates?",["Harvest","Womanhood and mother earth","Monsoon","Durga Puja"],1,"Swing festival celebrating womanhood"),
   e("OSSSC","Traditional Odia handloom fabric?",["Bandhani","Sambalpuri/Ikat","Kalamkari","Brocade"],1),
-  e("OSSSC","Gobara Sahi in Puri is famous for?",["Chariots workshop for Rath Yatra","Fish market","Coconut grove","Temple"),2,"Daitapati who serve Jagannath come from here – but most famous is the chariot-making area"),
+  e("OSSSC","Gobara Sahi in Puri is famous for?",["Chariots workshop for Rath Yatra","Fish market","Coconut grove","Temple"],2,"Most famous for chariot-making area near Jagannath Temple"),
   e("OSSSC","Odisha's first woman CM?",["Nandini Satpathy","Hemalata Dei","Pramila Birua","None yet"],3,"No woman CM yet in Odisha"),
   e("OSSSC","OPGC stands for?",["Odisha Power Generation Corporation","Odisha Public Generation Company","Odisha Power Grid Corp","None"],0),
   e("OSSSC","Indravati Tiger Reserve is in?",["Chhattisgarh","Odisha","Both (border)","Jharkhand"],0,"Primarily Chhattisgarh"),
@@ -947,7 +957,7 @@ const bpsc: Q[] = [
   e("BPSC","AIIMS Patna was established in?",["2006","2012","2015","2018"],1,"AIIMS Patna inaugurated 2012"),
   e("BPSC","Bihar's major crop?",["Wheat and Rice","Cotton and Jute","Sugar and Silk","Rubber and Tea"],0),
   e("BPSC","Ganga-Brahmaputra plains include Bihar's?",["Northern Plains","Deccan Plateau","Eastern Ghats","Western Plateau"],0,"Fertile alluvial plains"),
-  e("BPSC","Bihar's mineral resources?",["Iron ore abundant","Mica, limestone, coal","Oil reserves","Gold"),1,"Mica (Jharkhand) was Bihar's; now coal, mica, limestone"),
+  e("BPSC","Bihar's mineral resources?",["Iron ore abundant","Mica, limestone, coal","Oil reserves","Gold"],1,"Coal, mica, limestone are key minerals in Bihar region"),
   e("BPSC","Sanjay Gandhi Biological Park is in?",["Bodhgaya","Patna","Muzaffarpur","Gaya"],1),
   e("BPSC","Maner is famous for?",["Tomb of Makhdum Yahya Maneri","Steel industry","IT sector","Agriculture only"],0,"Sufi shrine"),
   e("BPSC","Bihar's biggest dam?",["Bagmati dam","Sone High Level Canal","Gandak Project","North Koel dam"],1,"Sone barrage system"),
@@ -1290,4 +1300,6 @@ const police: Q[] = [
 export const syllabusQuestions: Q[] = [
   ...jee, ...neet, ...upsc, ...sscCGL, ...bankPO, ...railway,
   ...osssc, ...opsc, ...uppsc, ...bpsc, ...mpsc, ...tnpsc, ...police,
+  ...odishaPolice_SI, ...odishaPolice_Constable, ...ips,
+  ...ojee, ...specialOjee, ...kpsc, ...wbpsc, ...rpsc,
 ];
