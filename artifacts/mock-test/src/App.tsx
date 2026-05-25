@@ -117,3 +117,57 @@ export default function App() {
     </QueryClientProvider>
   );
 }
+<div style={{
+textAlign:"center",
+padding:"40px",
+borderRadius:"20px",
+boxShadow:"0 8px 20px rgba(0,0,0,0.2)",
+margin:"20px",
+background:"linear-gradient(135deg,#1e3c72,#2a5298)",
+color:"white"
+}}>
+
+<img
+src={founder}
+alt="Founder"
+style={{
+width:"150px",
+height:"150px",
+borderRadius:"50%",
+objectFit:"cover",
+border:"5px solid white"
+}}
+/>
+
+<h1 style={{fontSize:"32px",marginTop:"15px"}}>
+Jashobanta Behera
+</h1>
+
+<h2>Founder & Creator of ExamNova</h2>
+
+<p style={{
+fontSize:"18px",
+maxWidth:"700px",
+margin:"auto",
+lineHeight:"1.8"
+}}>
+ExamNova is an innovative online examination platform created to help
+students prepare smarter for competitive exams like UPSC, IAS, IPS, OPCS, OPSI, NEET, JEE, OJEE, OSSC, OSSSC, OPSC,
+CTET, OTET, SSC, Banking and more.
+</p>
+
+<p style={{marginTop:"20px"}}>
+Empowering Odisha & India’s students through digital learning.
+</p>
+
+<button style={{
+padding:"12px 25px",
+borderRadius:"30px",
+border:"none",
+fontSize:"16px",
+cursor:"pointer"
+}}>
+Explore ExamNova
+</button>
+
+</div>
